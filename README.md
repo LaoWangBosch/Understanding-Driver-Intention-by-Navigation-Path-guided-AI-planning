@@ -1,7 +1,7 @@
 <div align="center">
 <h2>Make-E2E-Driving-Easy-Again-a-simple-yet-effective-navigation-path-enhanced-planning-methodology</h2>
 
- **Leichen Wang**<sup>1</sup> ·**Ziming Liu**<sup>1</sup> · **Yang Ge**<sup>1</sup> · **Xingtao Hu**<sup>1</sup> · **Xinrun Li**<sup>1</sup> <br>
+ **Leichen Wang**<sup>1</sup> ·**Ziming Liu**<sup>1</sup> · **Ge Yang**<sup>1</sup> · **Xingtao Hu**<sup>1</sup> · **Xinrun Li**<sup>1</sup> <br>
 
 <sup>1</sup>Bosch Corporate Research <br>
 
@@ -24,3 +24,32 @@ We argue that this omission is fundamentally unreasonable. Navigation paths are 
 
 To address these challenges and limitations, we propose a new planning methodology titled \textbf{Make E2E Driving Easy Again} A Simple Yet Effective Navigation Path Enhanced Planning Framework. This work builds on the strengths of existing E2E frameworks while addressing their shortcomings by explicitly incorporating navigation paths as a guiding prior for planning.
 </p>
+
+---
+
+### Comparison of NAVSIM Trajectory with our recovered Navigation Path
+The following images illustrate a comparison of the visualization of trajectories from NAVSIM with our recovered navigation path based on HMM-algorithm:
+
+---
+
+#### Scenario 1:
+<div align="center">
+    <img src="./figs/comparison_navsim_with_navigation_path.jpg" alt="Comparison of Navigation with Navigation Path" width="600">
+</div>
+
+---
+
+#### Animated Comparison:
+
+
+- **Left GIF**: NAVSIM Trajectory
+- **Right GIF**: Navigation Path
+
+<table>
+  <tr>
+    <td><img src="./gifs/navsim_sample1.gif" alt="Original SDMap Scenario 4" width="400"></td>
+    <td><img src="./gifs/nav_path_sample1.gif" alt="Modified SDMap Scenario 4" width="400"></td>
+  </tr>
+</table>
+
+---
