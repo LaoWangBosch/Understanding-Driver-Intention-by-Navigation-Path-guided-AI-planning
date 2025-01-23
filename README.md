@@ -32,24 +32,32 @@ The following images illustrate a comparison of the visualization of trajectorie
 
 ---
 
-#### Scenario 1:
+#### Scenario 1 (map location: SG-One-North):
 <div align="center">
     <img src="./figs/comparison_navsim_with_navigation_path.jpg" alt="Comparison of Navigation with Navigation Path" width="600">
 </div>
 
 ---
 
-#### Animated Comparison:
+## Animated Comparison
 
+### Description of Scenarios
 
-- **Left GIF**: NAVSIM Trajectory
-- **Right GIF**: Navigation Path
+1. **Left Turn Scenario**: Demonstrates the behavior of the navigation system in a simple left-turn environment.
+2. **Right Turn and Straight Movement Scenario**: Showcases the navigation through a combination of right turn and straight road sections.
+3. **Continuous Left Turns Scenario**: Tests the navigation system's capability to handle multiple consecutive left turns.
+4. **Roundabout Scenario**: Evaluates navigation performance within a roundabout environment.
 
-<table>
-  <tr>
-    <td><img src="./gifs/navsim_sample1.gif" alt="Original SDMap Scenario 4" width="400"></td>
-    <td><img src="./gifs/nav_path_sample1.gif" alt="Modified SDMap Scenario 4" width="400"></td>
-  </tr>
-</table>
+### Comparison Table
+
+- **Left GIF**: NAVSIM Trajectory  
+- **Right GIF**: Navigation Path  
+
+| **Scenario**                   | **NAVSIM Trajectory**                                       | **Navigation Path**                                       |
+|---------------------------------|------------------------------------------------------------|----------------------------------------------------------|
+| **Left Turn Scenario**          | <img src="./gifs/navsim_sg_one_north_sample1.gif" alt="NAVSIM Left Turn" width="400"> | <img src="./gifs/nav_path_sg_one_north_sample1.gif" alt="Navigation Path Left Turn" width="400"> |
+| **Right Turn and Straight Movement Scenario** | <img src="./gifs/navsim_boston_sample1.gif" alt="NAVSIM Roundabout" width="400"> | <img src="./gifs/nav_path_boston_sample1.gif" alt="Navigation Path Right Turn and Straight" width="400"> |
+| **Continuous Left Turns Scenario** | <img src="./gifs/navsim_las_vegas_sample1.gif" alt="NAVSIM Right Turn and Straight" width="400"> | <img src="./gifs/nav_path_las_vegas_sample1.gif" alt="Navigation Path Continuous Left Turns" width="400"> |
+| **Roundabout Scenario**         | <img src="./gifs/navsim_las_vegas_sample2.gif" alt="NAVSIM Continuous Left Turns" width="400"> | <img src="./gifs/nav_path_las_vegas_sample2.gif" alt="Navigation Path Roundabout" width="400"> |
 
 ---
