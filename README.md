@@ -27,37 +27,17 @@ To address these challenges and limitations, we propose a new planning methodolo
 
 ---
 
-### Comparison of NAVSIM Trajectory with our recovered Navigation Path
-The following images illustrate a comparison of the visualization of trajectories from NAVSIM with our recovered navigation path based on HMM-algorithm:
+### Comparison of NAVSIM Trajectory and Recovered Navigation Path
 
----
+The table below presents a comparative visualization of `NAVSIM` trajectories and our recovered navigation path, computed using the HMM algorithm. 
+Each GIF provides a side-by-side comparison, illustrating the differences between the two trajectories across various driving scenarios.
 
-#### Scenario 1 (map location: SG-One-North):
-<div align="center">
-    <img src="./figs/comparison_navsim_with_navigation_path.jpg" alt="Comparison of Navigation with Navigation Path" width="600">
-</div>
 
----
-
-## Animated Comparison
-
-### Description of Scenarios
-
-1. **Left Turn Scenario**: Demonstrates the behavior of the navigation system in a simple left-turn environment.
-2. **Right Turn and Straight Movement Scenario**: Showcases the navigation through a combination of right turn and straight road sections.
-3. **Continuous Left Turns Scenario**: Tests the navigation system's capability to handle multiple consecutive left turns.
-4. **Roundabout Scenario**: Evaluates navigation performance within a roundabout environment.
-
-### Comparison Table
-
-- **Left GIF**: NAVSIM Trajectory  
-- **Right GIF**: Navigation Path  
-
-| **Scenario**                   | **NAVSIM Trajectory**                                       | **Navigation Path**                                       |
-|---------------------------------|------------------------------------------------------------|----------------------------------------------------------|
-| **Left Turn Scenario**          | <img src="./gifs/navsim_sg_one_north_sample1.gif" alt="NAVSIM Left Turn" width="400"> | <img src="./gifs/nav_path_sg_one_north_sample1.gif" alt="Navigation Path Left Turn" width="400"> |
-| **Right Turn and Straight Movement Scenario** | <img src="./gifs/navsim_boston_sample1.gif" alt="NAVSIM Roundabout" width="400"> | <img src="./gifs/nav_path_boston_sample1.gif" alt="Navigation Path Right Turn and Straight" width="400"> |
-| **Continuous Left Turns Scenario** | <img src="./gifs/navsim_las_vegas_sample1.gif" alt="NAVSIM Right Turn and Straight" width="400"> | <img src="./gifs/nav_path_las_vegas_sample1.gif" alt="Navigation Path Continuous Left Turns" width="400"> |
-| **Roundabout Scenario**         | <img src="./gifs/navsim_las_vegas_sample2.gif" alt="NAVSIM Continuous Left Turns" width="400"> | <img src="./gifs/nav_path_las_vegas_sample2.gif" alt="Navigation Path Roundabout" width="400"> |
+| **Scenario**                   | **Visualization (NAVSIM vs. Navigation Path)**                         |
+|---------------------------------|-----------------------------------------------------------------------------|
+| **Straight Movement Scenario** | <img src="./gifs/straight_sample1.gif" alt="Straight Movement Scenario" width="600"> |
+| **Left Turn Scenario**          | <img src="./gifs/left_turn_sample1.gif" alt="Left Turn Scenario" width="600"> |
+| **Right Turn Scenario** | <img src="./gifs/right_turn_sample1.gif" alt="Right Turn Scenario" width="600"> |
+| **Loop Scenario** | <img src="./gifs/loop_sample1.gif" alt="Loop Scenario" width="600"> |
 
 ---
