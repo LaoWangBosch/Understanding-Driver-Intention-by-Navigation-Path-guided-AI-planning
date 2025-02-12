@@ -41,3 +41,16 @@ Each GIF provides a side-by-side comparison, illustrating the differences betwee
 | **Loop Scenario** | <img src="./gifs/loop_sample1.gif" alt="Loop Scenario" width="600"> |
 
 ---
+
+---
+
+### Impact of Navigation Path on Anchor Trajectories
+
+The figure below illustrates the impact of navigation paths on anchors across different driving scenarios.  
+It compares planning results **with and without navigation guidance**, demonstrating how the presence of a navigation path influences trajectory generation.
+
+<p align="center">
+    <img src="./figs/traj_gt_match_w_nav_path.png" alt="Impact of Navigation Path on Anchor Trajectories" width="90%">
+</p>
+
+---
