@@ -1,5 +1,5 @@
 <div align="center">
-<h2>Make-E2E-Driving-Easy-Again-a-simple-yet-effective-navigation-path-enhanced-planning-methodology</h2>
+<h2>Understanding Driver Intention by Navigation Path guided AI planning</h2>
 
  **Leichen Wang**<sup>1</sup> ·**Ziming Liu**<sup>1</sup> · **Ge Yang**<sup>1</sup> · **Xingtao Hu**<sup>1</sup> · **Xinrun Li**<sup>1</sup> <br>
 
@@ -15,7 +15,7 @@
 
 
 <p>
-End-to-end (E2E) autonomous driving frameworks have gained significant traction as a unified paradigm for integrating perception, prediction, and planning tasks. Despite their advancements, existing frameworks often suffer from directional deviations in trajectory planning, resulting in unsafe or suboptimal behaviors, particularly in complex scenarios. This paper identifies a critical gap in current E2E approaches: the underutilization of navigation paths, a readily available and interpretable source of driving intent in real-world autonomous systems. To address this limitation, we propose Make E2E Driving Easy Again, a simple yet effective navigation-path-enhanced planning methodology. Our contributions include: (1) introducing navigation paths as explicit priors for trajectory generation, (2) designing a novel planning-navigation interaction mechanism, (3) developing and releasing a toolchain that enriches datasets with navigation path annotations, and (4) demonstrating state-of-the-art performance on multiple benchmarks. Experimental results show that our approach significantly improves trajectory alignment, planning accuracy, and safety in dynamic environments, paving the way for more robust and interpretable E2E driving frameworks.
+Recent advancements in learning-based planning for autonomous driving have demonstrated promising scalability, yet they often suffer from mode collapse or directional deviations, failing to align with human driving intentions.  We identify a critical gap in existing frameworks: the lack of explicit modeling of navigation paths, leading to causal misidentification in planning tasks.  Inspired by human driving behavior, where navigation paths provide high-level guidance, we propose a novel approach that integrates navigation paths as a guide for trajectory planning.  We introduce two versatile frameworks tailored for anchor-based and non-anchor-based methods, addressing the limitations of current systems.  Additionally, we develop a toolchain for automatic navigation path generation and release an extended dataset with navigation annotations.  Extensive evaluations on the extended NavSim benchmark \textit{ and a newly collected driving dataset} demonstrate significant improvements in planning accuracy and safety, showcasing the robustness and transferability of our approach.
 </p>
 
 <p>
