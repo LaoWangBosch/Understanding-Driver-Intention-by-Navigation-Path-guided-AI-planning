@@ -42,15 +42,15 @@ Each GIF provides a side-by-side comparison, illustrating the differences betwee
 
 ---
 
----
+### Qualitative Comparison 
 
-### Impact of Navigation Path on Anchor Trajectories
+The figure below compares the original **Diffusion Drive** and our **navigation-path-enhanced Diffusion Drive** on challenging scenes from the **NAVSIM navtest split**. It demonstrates how navigation paths influence anchor trajectories across different driving scenarios.
 
-The figure below illustrates the impact of navigation paths on anchors across different driving scenarios.  
-It compares planning results **with and without navigation guidance**, demonstrating how the presence of a navigation path influences trajectory generation.
+
+
 
 <p align="center">
-    <img src="./figs/traj_gt_match_w_nav_path.png" alt="Impact of Navigation Path on Anchor Trajectories" width="90%">
+    <img src="./figs/qualitative_result.jpg" alt="Impact of Navigation Path on Anchor Trajectories" width="100%">
 </p>
 
 ---
