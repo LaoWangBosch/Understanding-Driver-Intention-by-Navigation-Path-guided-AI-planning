@@ -53,7 +53,7 @@ We release our extended datasets for **NavSim** to support the community in rese
 
 
 After extraction, each archive contains four subfolders corresponding to different cities:
-
+```
 nav_path_trainval/
 ├── sg-one-north/
 ├── us-ma-boston/
@@ -65,7 +65,7 @@ nav_path_test/
 ├── us-ma-boston/
 ├── us-nv-las-vegas-strip/
 └── us-pa-pittsburgh-hazelwood/
-
+```
 ---
 ### Qualitative Results 
 
