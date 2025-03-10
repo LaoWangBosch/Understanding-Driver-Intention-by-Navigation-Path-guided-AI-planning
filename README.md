@@ -1,11 +1,11 @@
 <div align="center">
-<h2>Understanding Driver Intention by Navigation Path guided AI planning</h2>
+<h2>Understanding Driver Intention: Enhancing IL Planning with Navigation Path Fusion</h2>
 
- **Leichen Wang**<sup>1</sup> ·**Ziming Liu**<sup>1</sup> · **Ge Yang**<sup>1</sup> · **Xingtao Hu**<sup>1</sup> · **Xinrun Li**<sup>1</sup> <br>
+ **Leichen Wang**<sup>1</sup>, **Ziming Liu**<sup>1</sup>, **Ge Yang**<sup>1</sup>, **Yuheng Zhou**<sup>2</sup>, **Xinrun Li**<sup>1</sup>, **Xingtao Hu**<sup>1</sup>, **Ge Yang**<sup>1</sup>, **Dashan Guo**<sup>2</sup>, **Cong Wang**<sup>2</sup>, **Hao Sun**<sup>1</sup>, **Lei La**<sup>2</sup>, **Kevin Sun**<sup>2</sup>, **Lijuan Zhu**<sup>1</sup>, **Jian Zhou**<sup>2</sup>, <br>
 
-<sup>1</sup>Bosch Corporate Research <br>
+<sup>1</sup>Bosch Research & Technology Center Asia Pacific, Shanghai, China, <sup>2</sup>Bosch Automotive Products (Suzhou) Co., Ltd.
 
-<!-- > **submitted to IROS 2025** -->
+> **Submitted to IROS 2025**
 
 </div>
 
@@ -13,36 +13,61 @@
 [\[Arxiv\]](https://arxiv.org/abs/2401.06614) [\[Paper\]](https://arxiv.org/pdf/2401.06614.pdf) [\[Project Page\]](https://[vveicao.github.io/projects/Motion2VecSets/](https://github.com/xiaowang12345/OMG_SD_map_prior_distribution))
 -->
 
+---
 
-<p>
-Recent advancements in learning-based planning for autonomous driving have demonstrated promising scalability, yet they often suffer from mode collapse or directional deviations, failing to align with human driving intentions.  We identify a critical gap in existing frameworks: the lack of explicit modeling of navigation paths, leading to causal misidentification in planning tasks.  Inspired by human driving behavior, where navigation paths provide high-level guidance, we propose a novel approach that integrates navigation paths as a guide for trajectory planning.  We introduce two versatile frameworks tailored for anchor-based and non-anchor-based methods, addressing the limitations of current systems.  Additionally, we develop a toolchain for automatic navigation path generation and release an extended dataset with navigation annotations.  Extensive evaluations on the extended NavSim benchmark \textit{ and a newly collected driving dataset} demonstrate significant improvements in planning accuracy and safety, showcasing the robustness and transferability of our approach.
-</p>
+## 🚗 Overview
 
-<p>
-We argue that this omission is fundamentally unreasonable. Navigation paths are not only readily available in real-world autonomous driving systems, but they also provide a direct and interpretable way to guide the planning process. Incorporating navigation paths into E2E frameworks offers a straightforward yet powerful solution to the problem of directional deviations in trajectory planning.
+Recent advancements in imitation learning (IL)-based planning for autonomous driving have shown impressive scalability. However, existing approaches often struggle with **mode collapse** or **directional deviations**, resulting in plans that fail to align with human driving intentions.
 
-
-To address these challenges and limitations, we propose a new planning methodology titled \textbf{Make E2E Driving Easy Again} A Simple Yet Effective Navigation Path Enhanced Planning Framework. This work builds on the strengths of existing E2E frameworks while addressing their shortcomings by explicitly incorporating navigation paths as a guiding prior for planning.
-</p>
+### 🔎 What's Missing?  
+A critical gap lies in the **lack of explicit modeling of navigation paths**, leading to **causal misidentification** in planning tasks. Navigation paths provide high-level guidance that humans intuitively follow—but most E2E planners ignore this essential component.
 
 ---
 
 ### Comparison of NAVSIM Trajectory and Recovered Navigation Path
 
-The table below presents a comparative visualization of `NAVSIM` trajectories and our recovered navigation path, computed using the HMM algorithm. 
-Each GIF provides a side-by-side comparison, illustrating the differences between the two trajectories across various driving scenarios.
+The table below presents a comparative visualization of `NAVSIM` trajectories and our recovered navigation path.
 
 
 | **Scenario**                   | **Visualization (NAVSIM vs. Navigation Path)**                         |
 |---------------------------------|-----------------------------------------------------------------------------|
-| **Straight Movement Scenario** | <img src="./gifs/straight_sample1.gif" alt="Straight Movement Scenario" width="600"> |
-| **Left Turn Scenario**          | <img src="./gifs/left_turn_sample1.gif" alt="Left Turn Scenario" width="600"> |
-| **Right Turn Scenario** | <img src="./gifs/right_turn_sample1.gif" alt="Right Turn Scenario" width="600"> |
-| **Loop Scenario** | <img src="./gifs/loop_sample1.gif" alt="Loop Scenario" width="600"> |
+| **Go Straight** | <img src="./gifs/straight_sample.gif" alt="Straight Movement Scenario" width="600"> |
+| **Left Turn**          | <img src="./gifs/left_turn_sample.gif" alt="Left Turn Scenario" width="600"> |
+| **Right Turn** | <img src="./gifs/right_turn_sample.gif" alt="Right Turn Scenario" width="600"> |
+| **Sharp Turn** | <img src="./gifs/loop_sample.gif" alt="Loop Scenario" width="600"> |
 
 ---
+## 📦 Dataset Release
 
-### Qualitative Comparison 
+We release our extended datasets for **NavSim** to support the community in research on navigation-path-enhanced planning.
+
+### 🔗 Download Links
+
+- **[nav_path_trainval.zip](https://drive.google.com/file/d/1gu2c1OYXH6vuE0n0E1a34Zmlw1BLpMuH/view?usp=drive_link)**  
+  Navigation path annotations for **training** and **validation** (NavSim benchmark).
+  
+- **[nav_path_test.zip](https://drive.google.com/file/d/1qfidsuZKyWAW8Cn955OtO03UbWRi-1XD/view?usp=drive_link)**  
+  Navigation path annotations for **testing** (NavSim benchmark).
+
+### 📁 Dataset Structure
+
+
+After extraction, each archive contains four subfolders corresponding to different cities:
+
+nav_path_trainval/
+├── sg-one-north/
+├── us-ma-boston/
+├── us-nv-las-vegas-strip/
+└── us-pa-pittsburgh-hazelwood/
+
+nav_path_test/
+├── sg-one-north/
+├── us-ma-boston/
+├── us-nv-las-vegas-strip/
+└── us-pa-pittsburgh-hazelwood/
+
+---
+### Qualitative Results 
 
 The figure below compares the original **Diffusion Drive** and our **navigation-path-enhanced Diffusion Drive** on challenging scenes from the **NAVSIM navtest split**. It demonstrates how navigation paths influence anchor trajectories across different driving scenarios.
 
@@ -54,3 +79,9 @@ The figure below compares the original **Diffusion Drive** and our **navigation-
 </p>
 
 ---
+## Citation
+If you find our paper or dataset is helpful in your research or development, please consider giving us a star and citing our work.
+
+```bibtex
+
+```
