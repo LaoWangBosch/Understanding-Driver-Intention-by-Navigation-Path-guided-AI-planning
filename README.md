@@ -1,7 +1,7 @@
 <div align="center">
 <h2>Understanding Driver Intention: Enhancing IL Planning with Navigation Path Fusion</h2>
 
- **Leichen Wang**<sup>1</sup>, **Ziming Liu**<sup>1</sup>, **Ge Yang**<sup>1</sup>, **Yuheng Zhou**<sup>2</sup>, **Xinrun Li**<sup>1</sup>, **Xingtao Hu**<sup>1</sup>, **Ge Yang**<sup>1</sup>, **Dashan Guo**<sup>2</sup>, **Cong Wang**<sup>2</sup>, **Hao Sun**<sup>1</sup>, **Lei La**<sup>2</sup>, **Kevin Sun**<sup>2</sup>, **Lijuan Zhu**<sup>1</sup>, **Jian Zhou**<sup>2</sup>, <br>
+ **Leichen Wang**<sup>1</sup>, **Ziming Liu**<sup>1</sup>, **Ge Yang**<sup>1</sup>, **Yuheng Zhou**<sup>2</sup>, **Xinrun Li**<sup>1</sup>, **Xingtao Hu**<sup>1</sup>, **Ge Yang**<sup>1</sup>, **Dashan Guo**<sup>2</sup>, **Cong Wang**<sup>2</sup>, **Hao Sun**<sup>1</sup>, **Lei La**<sup>2</sup>, **Kevin Sun**<sup>2</sup>, **Lijuan Zhu**<sup>1</sup>, **Jian Zhou**<sup>2</sup> <br>
 
 <sup>1</sup>Bosch Research & Technology Center Asia Pacific, Shanghai, China, <sup>2</sup>Bosch Automotive Products (Suzhou) Co., Ltd.
 
@@ -17,10 +17,33 @@
 
 ## 🚗 Overview
 
-Recent advancements in imitation learning (IL)-based planning for autonomous driving have shown impressive scalability. However, existing approaches often struggle with **mode collapse** or **directional deviations**, resulting in plans that fail to align with human driving intentions.
+Despite impressive progress in imitation-learning (IL)-based planning for autonomous driving, existing frameworks often struggle with:
+- **Mode collapse**  
+- **Directional deviations**  
+These issues result in trajectories that fail to align with **human driving intentions**.
 
-### 🔎 What's Missing?  
-A critical gap lies in the **lack of explicit modeling of navigation paths**, leading to **causal misidentification** in planning tasks. Navigation paths provide high-level guidance that humans intuitively follow—but most E2E planners ignore this essential component.
+We identify the **missing link**:  
+> 🔎 **Explicit modeling of navigation paths.**  
+Navigation paths provide **high-level causal guidance** in human driving, but are often ignored in current planning frameworks.
+
+---
+
+## ✨ Our Contributions
+
+✅ **Navigation Path Integration in IL Planners**  
+- Two simple yet effective frameworks for **anchor-based** and **non-anchor-based** planners.  
+- **Navigation paths** are fused as **causal priors**, eliminating mode collapse and directional deviation issues.
+
+✅ **Toolchain for Navigation Path Generation**  
+- Automatic extraction of navigation paths from **any dataset**, via our **HMM-based recovery algorithm**.
+
+✅ **Extended NAVSIM Dataset with Navigation Annotations**  
+- Released to the community to benchmark navigation-path-enhanced planning.
+
+✅ **Comprehensive Experiments**  
+- Multi-baseline comparison  
+- Cross-dataset validation  
+- Multi-metric assessments (planning accuracy & safety)
 
 ---
 
@@ -79,9 +102,19 @@ The figure below compares the original **Diffusion Drive** and our **navigation-
 </p>
 
 ---
-## Citation
-If you find our paper or dataset is helpful in your research or development, please consider giving us a star and citing our work.
+---
+## 📖 Citation
+If you find our **paper** or **dataset** helpful, please consider giving us a ⭐ and citing our work:
 
 ```bibtex
+@misc{wang2025understanding,
+    title        = {Understanding Driver Intention: Enhancing IL Planning with Navigation Path Fusion},
+    author       = {Leichen Wang and Ziming Liu and Ge Yang and Yuheng Zhou and Xinrun Li and Xingtao Hu and Dashan Guo and Cong Wang and Hao Sun and Lei La and Kevin Sun and Lijuan Zhu and Jian Zhou},
+    year         = {2025},
+    publisher    = {GitHub},
+    howpublished = {\url{https://github.com/LaoWangBosch/Understanding-Driver-Intention-by-Navigation-Path-guided-AI-planning}},
+    note         = {Dataset and Code available at GitHub}
+}
+
 
 ```
