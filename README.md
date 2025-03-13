@@ -9,12 +9,8 @@
 
 [![📄 Paper](https://img.shields.io/badge/Paper-Coming_Soon-blue?logo=arxiv)](https://arxiv.org/) &nbsp;[![🗂️ Navigation Path Dataset](https://img.shields.io/badge/Google%20Drive-Navigation%20Path-green?logo=google-drive)](https://drive.google.com/drive/folders/164XTPvvhoBRIj6E0HfIunPu3KAXj80ZR?usp=sharing) &nbsp;[![🚀 Demo](https://img.shields.io/badge/Demo-Coming_Soon-orange?logo=github)](https://github.com/) &nbsp;
 
-
 </div>
 
-<!-- >
-[\[Arxiv\]](https://arxiv.org/abs/2401.06614) [\[Paper\]](https://arxiv.org/pdf/2401.06614.pdf) [\[Project Page\]](https://[vveicao.github.io/projects/Motion2VecSets/](https://github.com/xiaowang12345/OMG_SD_map_prior_distribution))
--->
 
 ---
 
